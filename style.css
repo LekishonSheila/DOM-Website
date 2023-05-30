@@ -1,0 +1,45 @@
+.header{
+    background-color: whitesmoke; 
+    height: 50px;  
+   }
+   ol{
+       float: left;
+   }
+   ol li{
+       float: left;
+       width: 90px;
+       position: relative;
+       left: 25%;
+       display: flex;
+      
+   }
+   ol li a{
+       text-decoration: none;
+       color: black;
+   }
+   .container{
+    width: 10%;
+   }
+   .icons {
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px; 
+    border-radius: solid 5%;
+  }
+
+  .icon img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+.cover img{
+    width: 50%;
+    height: 50%;
+}
+.gram img{
+    width: 50%;
+    height: 50%;   
+}
+.electric img{
+    /* display: flex; */
+}

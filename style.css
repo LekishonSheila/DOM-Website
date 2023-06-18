@@ -1,6 +1,42 @@
 body{
     background-color:lightgray;
 }
+.nav{
+  background-color: #052327;
+  height: 18vh;
+  display: flex;
+  gap: 100px;
+}
+#sign{
+  background-color: #E0DF1F;
+  border-color: #E0DF1F;
+  width: 10vw;
+  height: 9vh;
+  margin-top: 13%;
+}
+a{
+  text-decoration: none;
+  color: white;
+  margin-top: 4%;
+}
+.searching{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 1%;
+  width: 60%;
+}
+.search img{
+  width: 5vw;
+  height: 4vh;
+  /* position: relative; */
+}
+.devices{
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  /* background-color: #DBA7E6; */
+  height: 95vh;
+  margin-top: 2%;
+}
 
 .header{
     background-color: whitesmoke; 
@@ -21,39 +57,53 @@ body{
        text-decoration: none;
        color: black;
    }
+   .devices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
-   /* .shee {
+.left {
+    text-align: center;
+    z-index: 1;
     position: relative;
-  }
-  
-  .shee .container {
+}
+
+.right {
     position: relative;
-  }
-  
-  .shee .explanation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    color: #fff;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .shee .explanation h1,
-  .shee .explanation p {
-    margin: 0;
-  }
-  
-  .shee .explanation button {
-    margin-top: 5%;
-  }
-  
-  .shee .container img {
-    width: 90%;
+}
+
+.right img {
+    width: 100%;
     height: auto;
-    padding-left: 5%;
-  } */
+}
+
+h1 {
+    font-size: 24px;
+    color: #ec4949;
+    margin-bottom: 10px;
+}
+
+p#devicep {
+    font-size: 16px;
+    color: #030303;
+    margin-bottom: 20px;
+}
+
+.order,
+.explore {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+   
+
   
 .container img{
     width: 90%;
@@ -64,32 +114,6 @@ body{
     margin-bottom:20px;
    } 
 
-   /* #icons{
-    display: grid;
-    grid-template-columns: repeat(6, 6fr);
-    font-size: 1em;
-    text-align: center;
-}
-#icon{
-    font-size: 2em;
-}
-#icons{
-    border: solid 1px rgb(153, 158, 153);
-    gap: 2em;
-    width: 10em;
-    height: 7em;
-}
-#icona{
-    font-size: 2em;
-}
-#iccons{
-    border: solid 1px rgb(153, 158, 153);
-    gap: 2em;
-    width: 10em;
-    height: 7em;
-    color: white;
-    background-color: black;
-} */
 
 .icons .icon img {
     border: 2px solid blue;
@@ -128,15 +152,7 @@ body{
     width: 95%;
     height: 95%;   
 }
-/* .image img{
-height: 85%;
-width: 98%;
 
-} */
-/* .charge{
-    display: flex;
-    padding-left: 6%;
-} */
 
 
  .charge {
@@ -177,37 +193,6 @@ width: 98%;
     padding: 20px;
   }
 
-
-/* 
-  .testy {
-    margin-bottom: 20px;
-  }
-
-  .test h1 {
-    text-align: center;
-  } */
-
-  /* .Alique {
-    text-align: left;
-    margin-right: 20px;
-  } */
-
-  /* .mony {
-    flex-grow: 1;
-    text-align: right;
-  } */
-
-  /* .mony img {
-    max-width: 100%;
-    height: auto;
-  }  */
-
-/* .testy{
-    text-align: center;
-}
-.mony{
-   padding-left: 50%;
-} */ 
 
 
 .product-card {
@@ -264,4 +249,48 @@ ul{
 #dags{
     font-weight: bold;
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px){
+  .nav {
+    gap: 10px;
+  }
+  
+  #sign {
+    width: 100%;
+  }
+  
+  .searching {
+    width: 100%;
+  }
+  
+  .devices {
+    gap: 10px;
+  }
+  
+  .left, .right {
+    text-align: center;
+  }
+  
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  
+  p#devicep {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .order, .explore {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-right: 6px;
+  }
+
 }
